@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>CIShoping - Orders Detail</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <div class="container">
+        <a class="navbar-brand font-weight-bold" href="index.html">CI Shoping</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-1">
+                <a href="/admin-category.html" class="dropdown-item">Kategori</a>
+                <a href="/admin-product.html" class="dropdown-item">Produk</a>
+                <a href="/admin-Order.html" class="dropdown-item">Order</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="/cart.html" class="nav-link"><i class="fa fa-shopping-cart"></i> Cart (0)</a>
+            </li>
+            <li class="nav-item">
+              <a href="/login.html" class="nav-link"> Login </a>
+            </li>
+            <li class="nav-item">
+              <a href="/register.html" class="nav-link"> Register </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-2">
+                <a href="/admin-profile.html" class="dropdown-item">Profile</a>
+                <a href="/admin-orders.html" class="dropdown-item">Orders</a>
+                <a href="/admin-logout.html" class="dropdown-item">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+ 
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            Detail Order #0123456123
+                            <div class="float-right">
+                                <span class="badge badge-pill badge-info">Menunggu Pembayaran</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Nama: Nama Penerima</p>
+                            <p>Telepon: 087758373050</p>
+                            <p>Alamat: Jl. Sesama, No. 123</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Produk</th>
+                                        <th class="text-center">Harga</th>
+                                        <th class="text-center">Jumlah</th>
+                                        <th class="text-center">Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <img src="https://placehold.co/50x50" alt="">
+                                                <strong> Produk Title </strong>
+                                            </p>
+                                        </td>
+                                        <td class="text-center">Rp100.000,-</td>
+                                        <td class="text-center">1</td>
+                                        <td class="text-center">Rp100.000,-</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><strong>Total:</strong></td>
+                                        <td class="text-center"><strong>Rp100.000,-</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                            <form action="">
+                                <div class="input-group">
+                                    <select name="" id="" class="form-control">
+                                        <option value="waiting">Menunggu Pembayaran</option>
+                                        <option value="paid">Dibayar</option>
+                                        <option value="diliverd">Dikirim</option>
+                                        <option value="cancel">Batal</option>
+                                    </select>
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-8">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            Bukti Transfer
+                        </div>
+                        <div class="card-body">
+                            <p>Dari Rekening: 091244</p>
+                            <p>Atas Nama: IdStack</p>
+                            <p>Nominal: Rp900.0000,-</p>
+                            <p>Catatan: -</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://placehold.co/150x200" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
